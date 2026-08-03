@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #0c0d0f;
+  --bg-2: #14161a;
+  --ink: #f3f1eb;
+  --muted: #9a968c;
+  --line: rgba(243, 241, 235, 0.12);
+  --accent: #e23d2b;
+  --accent-2: #ff6b4a;
+  /* One simple family everywhere — no separate display face */
+  --sans: "Instrument Sans", system-ui, -apple-system, sans-serif;
+  --display: var(--sans);
+}
+
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+button, input, select, textarea { font: inherit; }
+h1, h2, h3 {
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
